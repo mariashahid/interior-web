@@ -2,133 +2,223 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap"
+      href="https://fonts.googleapis.com/css?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/home.css" />
+    <script
+      src="https://kit.fontawesome.com/3799c3457a.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="container">
-      <header class="header">
-        <img class="logo" src="images/logo.png" alt="Logo" />
-        <nav class="nav">
+      <header class="collapsible">
+        <div class="logo">
+          <img src="images/logo.png" />
+        </div>
+        <svg class="toggler">
+          <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+        <nav class="nav collapsible-content">
           <ul>
-            <li class="nav-item home">Home</li>
-            <li class="nav-item">Team</li>
-            <li class="nav-item">Services</li>
-            <li class="nav-item">About Us</li>
-            <li class="nav-item active">Contact Us</li>
+            <li><span class="nav-item">Home</span></li>
+            <li><span class="nav-item">About Us</span></li>
+            <li><span class="nav-item">Our Teams</span></li>
+            <li><span class="nav-item">Services</span></li>
+            <li><span class="nav-item active">Contact Us</span></li>
           </ul>
         </nav>
       </header>
-      <main>
-        <article class="banner">
-          <section class="banner-title">
-            Design your interor with high quality.
-          </section>
-          <section class="banner-divider divider"></section>
-          <section class="banner-highlights">
-            <div>
-              <div class="banner-number">350+</div>
-              <div class="banner-text">Projects Completed</div>
+      <div class="banner">
+        <h1 class="banner-title">Design your interor with high quality.</h1>
+        <span class="copyright">2022 ALL&nbsp;RIGHT&nbsp;RESERVED</span>
+        <div class="banner-image">
+          <img src="images/home-header.png" />
+          <div class="banner-highlights">
+            <div class="banner-highlight">
+              <span class="banner-number">350+</span
+              ><span class="banner-text">Project Completed</span>
             </div>
-            <div>
-              <div class="banner-number">23+</div>
-              <div class="banner-text">Professional Teams</div>
+            <div class="banner-highlight">
+              <span class="banner-number">23+</span
+              ><span class="banner-text">Professional Teams</span>
             </div>
-            <div>
-              <div class="banner-number">15+</div>
-              <div class="banner-text">Years Experience</div>
+            <div class="banner-highlight">
+              <span class="banner-number">15+</span
+              ><span class="banner-text">Years Experience</span>
             </div>
-          </section>
-          <img class="banner-image" src="images/home-header.png" />
-        </article>
-        <article class="section section-about">
-          <section class="section-header">
-            <section class="section-title">
-              <span>About</span>
-              <div class="divider section-divider"></div>
-            </section>
-            <div class="section-heading">
-              “We're one of the best furniture agency. Prioritizing customers
-              and making purchases easy are the hallmarks of our agency.”
-            </div>
-            <div class="section-content">
+          </div>
+        </div>
+        <div class="section-about">
+          <div class="section-title">ABOUT</div>
+          <div class="section-heading">
+            “We're one of the best furniture agency. Prioritizing customers and
+            making purchases easy are the hallmarks of our agency.”
+          </div>
+          <div class="section-description">
+            <div class="section-image">
               <img src="images/content-1.png" />
-              <div class="user">
-                <img src="images/user.png" />
-                <div class="user-detail">
-                  <div class="user-name">Argo Donaan</div>
-                  <div class="user-title">CEO of Dananz</div>
-                </div>
-              </div>
-              <div class="section-text">
+            </div>
+            <div class="section-user">
+              <img src="images/user.png" />
+              <span class="user-detail">
+                <div class="user-name">Arga Danaan</div>
+                <div class="user-title">CEO of Dananz</div>
+              </span>
+            </div>
+            <div class="section-text">
+              <p>
                 Online learning with us does not interfere with your daily life.
                 because learning can be done anytime and anywhere.
                 <button class="btn">Learn More</button>
-              </div>
+              </p>
             </div>
-          </section>
-        </article>
-        <article class="section section-service">
-          <section class="section-header">
-            <section class="section-title">
-              <span>Service</span>
-              <div class="divider section-divider"></div>
-            </section>
+          </div>
+        </div>
+        <div class="section-service">
+          <div class="section-content">
+            <div class="section-title">SERVICE</div>
             <div class="section-heading">
               attractive furniture with the best quality.
             </div>
-            <div class="section-text"></div>
-          </section>
-        </article>
-        <article class="section section-product">
-          <section class="section-header">
-            <section class="section-title">
-              <span>Product</span>
-              <div class="divider section-divider"></div>
-            </section>
-            <div class="section-heading">Choose your product themes.</div>
-            <div class="section-text"></div>
-          </section>
-        </article>
-        <article class="section section-material">
-          <section class="section-header">
-            <section class="section-title">
-              <span>Material</span>
-              <div class="divider section-divider"></div>
-            </section>
-            <div class="section-heading">
-              choice of materials for quality furniture.
+            <div class="section-text">
+              Customize your interior design into a dream place with the best
+              designers and quality furniture. We try our best to fulfill your
+              expectations.
             </div>
-            <div class="section-text"></div>
-          </section>
-        </article>
-      </main>
+            <div class="section-highlights">
+              <div class="section-highlight">
+                <span>01</span>
+                <span>Interior Design</span>
+                <img src="images/arrow-right.png" />
+              </div>
+              <div class="section-highlight">
+                <span>02</span>
+                <span>Consultant</span>
+                <img src="images/arrow-right.png" />
+              </div>
+              <div class="section-highlight">
+                <span>03</span>
+                <span>Construction Consultant</span>
+                <img src="images/arrow-right.png" />
+              </div>
+            </div>
+          </div>
+          <div class="section-image">
+            <img src="images/content-2.png" />
+          </div>
+        </div>
+      </div>
+      <div class="section-product">
+        <div class="section-title">PRODUCT</div>
+        <div class="section-heading">Choose your product themes.</div>
+        <div class="section-text">
+          Find the theme you want. If our choice of theme is not what you want,
+          you can customize it as you want.
+        </div>
+        <div class="section-highlights">
+          <div class="section-highlight">
+            <span class="highlight-number">01</span>
+            <div>
+              <div class="highlight-title">Vintage</div>
+              <div class="highlight-text">
+                the use of simple and limited elements to get the best effect or
+                impression.
+              </div>
+            </div>
+            <img src="images/arrow-right.png" />
+          </div>
+          <div class="section-highlight">
+            <span class="highlight-number">02</span>
+            <div>
+              <div class="highlight-title">Minimalist</div>
+              <div class="highlight-text">
+                the use of simple and limited elements to get the best effect or
+                impression.
+              </div>
+            </div>
+            <img src="images/arrow-right.png" />
+          </div>
+          <div class="section-highlight">
+            <span class="highlight-number">03</span>
+            <div>
+              <div class="highlight-title">Modern</div>
+              <div class="highlight-text">
+                the use of simple and limited elements to get the best effect or
+                impression.
+              </div>
+            </div>
+            <img src="images/arrow-right.png" />
+          </div>
+          <div class="section-highlight">
+            <span class="highlight-number">04</span>
+            <div>
+              <div class="highlight-title">transitional</div>
+              <div class="highlight-text">
+                the use of simple and limited elements to get the best effect or
+                impression.
+              </div>
+            </div>
+            <img src="images/arrow-right.png" />
+          </div>
+        </div>
+      </div>
+      <div class="section-material">
+        <div class="section-content">
+          <div class="section-title">MATERIAL</div>
+          <div class="section-heading">
+            choice of materials for quality furniture.
+          </div>
+          <div class="section-text">
+            You can custom the material as desired. And our furniture uses the
+            best materials and selected quality materials.
+          </div>
+        </div>
+        <button class="btn btn-white">See Materials</button>
+        <img class="material-image-1" src="images/content-3.png" />
+        <img class="material-image-2" src="images/content-4.png" />
+        <img class="material-image-3" src="images/content-5.png" />
+      </div>
     </div>
-    <footer>
-      <section class="footer-top">
-        <div class="container">
-          <p class="footer-left">
-            let's discuss making your interior like a dream place!
-          </p>
-          <p class="footer-right">
-            Contact us below to work together to build your amazing interior
-            <button class="btn btn-white">Contact Us</button>
-          </p>
+    <div class="footer-top">
+      <div class="container">
+        <p class="footer-left">
+          let's discuss making your interior like a dream place!
+        </p>
+        <p class="footer-right">
+          Contact us below to work together to build your amazing interior
+          <button class="btn btn-white">Contact Us</button>
+        </p>
+      </div>
+    </div>
+    <section class="footer-bottom container">
+      <div class="content-left">
+        <img src="images/logo.png" alt="" />
+        <h2>One of the best furniture agency.</h2>
+      </div>
+      <div class="content-right">
+        <div class="input-label">
+          <span class="dot"></span> Enter your email to get the latest news
         </div>
-      </section>
-      <section class="footer-content container">
-        <div class="content-box">
-          <img src="images/logo.png" alt="" />
-          <div>One of the best furniture agency.</div>
+        <div class="input-group">
+          <input class="input" type="text" />
+          <img class="input-arrow" src="images/arrow-right.png" />
         </div>
-        <div></div>
-      </section>
-    </footer>
+        <div class="social">
+          <div class="social-content">
+            <div class="social-label">Follow us on</div>
+            <div class="social-icons">
+              <i class="icon fab fa-facebook"></i>
+              <i class="icon fab fa-instagram"></i>
+              <i class="icon fab fa-tiktok"></i>
+              <i class="icon fab fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/main.js"></script>
   </body>
 </html>
